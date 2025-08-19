@@ -1,0 +1,26 @@
+name: gpu-inference
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pytorch=2.0.1
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.7
+  - pip:
+    - azure-ai-ml==1.10.0
+    - azure-identity
+    - fastapi
+    - uvicorn
+    - python-dotenv
+    - numpy>=1.21.0
+    - pandas
+    - scikit-learn
+    - matplotlib
+    - jupyter
+    - nb_conda_kernels
+    - ipykernel
+    - ipywidgets
